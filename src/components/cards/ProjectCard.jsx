@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Card = styled.div`
   width: 330px;
-  height: 490px;
+  height: 350px;
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
@@ -103,15 +103,15 @@ const ProjectCard = ({ project }) => {
       <Details>
         <Title>{project.title}</Title>
         <Date>{project.date}</Date>
-        <Description>{project.description}</Description>
+        {/* <Description>{project.description}</Description> */}
       </Details>
-      <Members>
+      {/* <Members>
         {project.member?.map((member) => (
           <Avatar src={member.img} />
         ))}
-      </Members>
-      <Button href={project.github} target="_blank">
-        View Code
+      </Members> */}
+      <Button href={project.webapp} target="_blank">
+        Live Website
       </Button>
     </Card>
   );

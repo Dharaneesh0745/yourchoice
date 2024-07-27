@@ -132,36 +132,36 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">GeeksForGeeks</NavLogo>
+        <NavLogo to="/">Your Choice</NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: "inherit" }} />
         </MobileIcon>
 
         <NavItems>
-          <NavLink href="#About">About</NavLink>
-          <NavLink href="#Skills">Skills</NavLink>
-          <NavLink href="#Experience">Experience</NavLink>
+          {/* <NavLink href="#About">About</NavLink> */}
+          {/* <NavLink href="#Skills">Skills</NavLink> */}
+          <NavLink href="#services">Our Services</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
-          <NavLink href="#Education">Education</NavLink>
+          <NavLink href="#team">Our Team</NavLink>
         </NavItems>
 
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">
+            {/* <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">
               About
-            </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">
+            </NavLink> */}
+            {/* <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">
               Skills
-            </NavLink>
+            </NavLink> */}
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#services">
               Our Services
             </NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects">
               Projects
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Education">
-              Education
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#team">
+              Our Team
             </NavLink>
             <GithubButton
               href={"tel:9025386192"}

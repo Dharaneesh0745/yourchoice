@@ -84,13 +84,13 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Rishav Chanda</Logo>
+        <Logo>Your Choice</Logo>
         <Nav>
           <NavLink href="#About">About</NavLink>
-          <NavLink href="#Skills">Skills</NavLink>
-          <NavLink href="#Experience">Experience</NavLink>
+          {/* <NavLink href="#Skills">Skills</NavLink> */}
+          <NavLink href="#services">Our Service</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
-          <NavLink href="#Education">Education</NavLink>
+          <NavLink href="#team">Our Team</NavLink>
         </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.facebook} target="display">
@@ -106,7 +106,7 @@ const Footer = () => {
             <Instagram />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Rishav Chanda. All rights reserved.</Copyright>
+        <Copyright>&copy; 2024 Your Choice. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

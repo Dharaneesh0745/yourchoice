@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../images/HeroImage.jpg";
+import HeroImg from "../../images/logo.jpg";
 import HeroBgAnimation from "../HeroBgAnimation";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
@@ -228,11 +228,8 @@ const Hero = () => {
           <HeroInnerContainer>
             <HeroLeftContainer>
               <motion.div {...headTextAnimation}>
-                <Title>
-                  Hi, I am <br /> {Bio.name}
-                </Title>
+                <Title>Your Choice</Title>
                 <TextLoop>
-                  I am a
                   <Span>
                     <Typewriter
                       options={{
@@ -249,8 +246,8 @@ const Hero = () => {
                 <SubTitle>{Bio.description}</SubTitle>
               </motion.div>
 
-              <ResumeButton href={Bio.resume} target="_blank">
-                Check Resume
+              <ResumeButton href={"mailto:yourchoice@gmail.com"}>
+                Mail Us
               </ResumeButton>
             </HeroLeftContainer>
             <HeroRightContainer>
