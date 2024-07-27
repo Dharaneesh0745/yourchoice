@@ -154,8 +154,8 @@ const Navbar = () => {
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">
               Skills
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience">
-              Experience
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#services">
+              Our Services
             </NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects">
               Projects
@@ -164,22 +164,19 @@ const Navbar = () => {
               Education
             </NavLink>
             <GithubButton
-              href={Bio.github}
-              target="_Blank"
+              href={"tel:9025386192"}
               style={{
                 background: theme.primary,
                 color: theme.text_primary,
               }}
             >
-              Github Profile
+              Contact Us
             </GithubButton>
           </MobileMenu>
         )}
 
         <ButtonContainer>
-          <GithubButton href={Bio.github} target="_Blank">
-            Github Profile
-          </GithubButton>
+          <GithubButton href={"tel:9025386192"}>Contact Us</GithubButton>
         </ButtonContainer>
       </NavbarContainer>
     </Nav>
