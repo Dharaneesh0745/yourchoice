@@ -117,16 +117,16 @@ const SkillImage = styled.img`
 
 const Skills = () => {
   return (
-    <Container id="Skills">
+    <Container id="stats">
       <Wrapper>
-        <Title>Skills</Title>
+        <Title>Our Stats</Title>
         <Desc
           style={{
             marginBottom: "40px",
           }}
         >
-          Here are some of my skills on which I have been working on for the
-          past 3 years.
+          Here are some of our stats on which we have been working on for the
+          past 1 year.
         </Desc>
 
         <SkillsContainer>
@@ -137,7 +137,7 @@ const Skills = () => {
                 <SkillList>
                   {skill.skills.map((item, index_x) => (
                     <SkillItem key={`skill-x-${index_x}`}>
-                      <SkillImage src={item.image} />
+                      {/* <SkillImage src={item.image} /> */}
                       {item.name}
                     </SkillItem>
                   ))}

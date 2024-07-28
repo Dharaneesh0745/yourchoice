@@ -137,12 +137,14 @@ const Contact = () => {
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
         <ContactForm onSubmit={handelSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
+          <ContactTitle>Email Us 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" name="message" rows={4} />
-          <ContactButton type="submit" value="Send" />
+          <a href="mailto:yourchoice@gmail.com">
+            <ContactButton type="submit" value="Send" />
+          </a>
         </ContactForm>
       </Wrapper>
     </Container>
